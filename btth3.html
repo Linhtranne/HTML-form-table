@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập thực hành 3</title>
+    <style>
+    .checkbox-options {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .checkbox-option {
+      margin-right: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h2>Thêm mới nhân viên</h2>
+    <form method="POST">
+        <div>
+              <label for="fullName">Họ và Tên:</label>
+              <input type="text" id="fullName" name="fullName">
+              <br>
+          
+              <label for="Day">Ngày Sinh (Ngày):</label>
+              <input type="number" id="Day" name="Day" min="1" max="31">
+          
+              <label for="Month">Ngày Sinh (Tháng):</label>
+              <input type="number" id="Month" name="Month" min="1" max="12">
+          
+              <label for="Year">Ngày Sinh (Năm):</label>
+              <input type="number" id="Year" name="Year" min="1900" max="2023">
+            <br>
+              <label for="time">Thời Gian:</label>
+              <input type="time" id="time" name="time">
+            <br>
+              <label for="gender">Giới Tính:</label>
+              <select id="gender" name="gender">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+              </select>
+            <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+            <br>
+              <label for="password">Mật khẩu:</label>
+              <input type="password" id="password" name="password">
+            <br>
+              <label for="intro">Giới Thiệu Bản Thân:</label>
+              <textarea id="intro" name="intro" rows="4"></textarea>
+            <br>
+              <label for="city">Thành Phố:</label>
+              <input type="text" id="city" name="city">
+            <br>
+              <label for="image">Hình Ảnh (Chọn Tệp):</label>
+              <input type="file" id="image" name="image" accept="image/*">
+              <br>
+              <label>Sở Thích:</label>
+              
+              <div class="checkbox-options">
+                <label class="checkbox-option"><input type="checkbox" name="hobbies" value="Code"> Code</label>
+                <label class="checkbox-option"><input type="checkbox" name="hobbies" value="Chơi Game"> Chơi Game</label>
+                <label class="checkbox-option"><input type="checkbox" name="hobbies" value="Bơi Lội"> Bơi Lội</label>
+                <label class="checkbox-option"><input type="checkbox" name="hobbies" value="Đá Bóng"> Đá Bóng</label>
+              </div>
+          
+              <button type="submit">Thêm Mới</button>
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <h3>Bài 2</h3>
+    <form method="POST">
+        <div>
+            <label for="Progress of work completion">Tiến độ hoàn thành công việc:</label>
+            <input type="range" id="ProgressOfWorkCompletion" name="ProgressOfWorkCompletion">
+            <br>
+            <label for="years of experience">Năm kinh nghiệm:</label>
+            <input type="text" id="yearsOfExperience" name="yearsOfExperience">
+            <br>
+            <label for="search">Tìm kiếm:</label>
+            <select id="Surname" name="Surname">
+              <option value="Nguyễn">Nguyễn</option>
+              <option value="Trần">Trần</option>
+              <option value="Lê">Lê</option>
+              <option value="Khác">Khác</option>
+            </select>
+            <br>
+            <label for="favoriteColor">Màu Sắc Yêu Thích:</label>
+            <input type="color" id="favoriteColor" name="favoriteColor">
+        </div>
+    </form>
+</body>
+</html>
